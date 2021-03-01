@@ -1,10 +1,9 @@
 channel_sources:
-  - astrorama/label/develop,astrorama,conda-forge,defaults
+  - astrorama,conda-forge,defaults
 
 channel_targets:
-  - astrorama develop
+  - astrorama multithreaded
 
 python:
   # part of a zip_keys: python, python_impl, numpy
-  - 3.7.* *_cpython    # [not (osx and arm64)]
   - 3.8.* *_cpython

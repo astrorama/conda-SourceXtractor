@@ -41,6 +41,7 @@ requirements:
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('pyston', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('cfitsio') }}
         - {{ pin_compatible('CCfits') }}
         - {{ pin_compatible('wcslib') }}

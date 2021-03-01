@@ -28,6 +28,7 @@ requirements:
         - python
         - boost
         - alexandria ==2.18
+        - pyston ==0.1
         - cfitsio >=3.470
         - CCfits >=2.5
         - wcslib >=7.3

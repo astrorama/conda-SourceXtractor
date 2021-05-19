@@ -1,5 +1,5 @@
 {% set name = "SourceXtractor" %}
-{% set version = "0.14" %}
+{% set version = "0.15" %}
 {% set build_number = environ.get('GIT_DESCRIBE_NUMBER', '0') %}
 
 package:
@@ -7,7 +7,7 @@ package:
     version: {{ version }}
 
 source:
-    git_rev: experimental/multithreaded
+    git_rev: feature/pyston
     git_url: https://github.com/astrorama/sourcextractorplusplus.git
 
 build:
@@ -27,7 +27,7 @@ requirements:
     host:
         - python
         - boost
-        - alexandria ==2.18
+        - alexandria ==2.19
         - pyston ==0.1
         - cfitsio >=3.470
         - CCfits >=2.5
